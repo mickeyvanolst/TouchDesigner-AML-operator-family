@@ -1,6 +1,6 @@
 # Contours
 
-*POP · v0.1.1*
+*POP · v0.1.2*
 
 <!-- screenshot: drop a PNG at docs/images/contours.png and rerun the generator -->
 
@@ -36,4 +36,5 @@ Line-strip geometry. Points carry `P`, `contour` and `depth` (0 is an outline, 1
 | **Outlines Only** | toggle | False |  |
 | **Process Interval** | number | 1 |  |
 | **Coordinates** | menu | Centred | 0 to 1 (image space), Centred, aspect-corrected |
+| **Async** | toggle | True |  |
 

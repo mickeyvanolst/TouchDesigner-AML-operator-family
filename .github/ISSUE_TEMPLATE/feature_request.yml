@@ -1,0 +1,19 @@
+name: Feature request
+description: Suggest an operator, a parameter, or a change
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: want
+    attributes:
+      label: What would you like to do?
+      description: >
+        Describe the result you are after rather than the implementation —
+        there is often an existing operator that gets there, and if not,
+        knowing the goal shapes a better feature than knowing the proposal.
+    validations:
+      required: true
+  - type: textarea
+    id: now
+    attributes:
+      label: How do you do it today?
+      description: What you currently use instead, and where it falls short.

@@ -1,0 +1,89 @@
+name: Bug report
+description: Something in AML behaves incorrectly
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting. The fields below are the ones that usually
+        decide whether a bug can be fixed or only guessed at — especially
+        the macOS and TouchDesigner versions, since most of AML sits on
+        Apple frameworks whose behaviour changes between OS releases.
+
+  - type: input
+    id: aml
+    attributes:
+      label: AML version
+      description: The operator's About page, or the installer you ran.
+      placeholder: "0.9.3"
+    validations:
+      required: true
+
+  - type: input
+    id: operator
+    attributes:
+      label: Which operator
+      placeholder: "Pose Tracker"
+    validations:
+      required: true
+
+  - type: input
+    id: macos
+    attributes:
+      label: macOS version
+      placeholder: "26.6.2"
+    validations:
+      required: true
+
+  - type: input
+    id: td
+    attributes:
+      label: TouchDesigner version
+      placeholder: "2025.33070"
+    validations:
+      required: true
+
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What you did, what you expected, what you got instead.
+    validations:
+      required: true
+
+  - type: textarea
+    id: parameters
+    attributes:
+      label: Parameters
+      description: >
+        Which parameters were away from their defaults? Many issues turn out
+        to depend on a particular combination, so this is often the fastest
+        route to a fix.
+      placeholder: "Detect 3D Pose on, Detect Hands off, Compute Units = CPU+GPU"
+
+  - type: dropdown
+    id: defaults
+    attributes:
+      label: Does it happen with default parameters?
+      options:
+        - "Yes — happens with defaults"
+        - "No — only with the parameters above"
+        - "Haven't tried"
+    validations:
+      required: true
+
+  - type: textarea
+    id: node
+    attributes:
+      label: Node error or warning text
+      description: The exact text from the operator, if any.
+      render: text
+
+  - type: textarea
+    id: crash
+    attributes:
+      label: Crash report
+      description: >
+        If TouchDesigner quit, paste the report from Console →
+        Crash Reports. The thread that crashed is the useful part.
+      render: text

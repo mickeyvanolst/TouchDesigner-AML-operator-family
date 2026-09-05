@@ -1,0 +1,10 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Getting AML
+    url: https://mickeyvanolst.com
+    about: >
+      AML is distributed to supporters. This repository is for issues and
+      documentation, not downloads.
+  - name: Installing and first steps
+    url: https://github.com/mickeyvanolst/TouchDesigner-AML-operator-family-/blob/main/docs/README.md
+    about: Operator documentation, including every parameter.

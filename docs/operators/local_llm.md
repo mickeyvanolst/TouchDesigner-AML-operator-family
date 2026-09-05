@@ -1,6 +1,6 @@
 # Local LLM
 
-*CHOP · v0.2.0*
+*CHOP · v0.2.1*
 
 <!-- screenshot: drop a PNG at docs/images/local_llm.png and rerun the generator -->
 
@@ -16,6 +16,7 @@ Streamed text, progress and timing channels.
 
 ## Worth knowing
 
+- **Not realtime.** Generation takes seconds; the progress and timing channels are there to choreograph around it.
 - Requires Apple Intelligence to be enabled; the exact reason is surfaced when it is not.
 
 ## Parameters

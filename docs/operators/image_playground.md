@@ -1,6 +1,6 @@
 # Image Playground
 
-*TOP · v0.1.0*
+*TOP · v0.1.1*
 
 <!-- screenshot: drop a PNG at docs/images/image_playground.png and rerun the generator -->
 
@@ -16,6 +16,7 @@ The generated image.
 
 ## Worth knowing
 
+- **Not realtime.** Generate-driven, a few seconds per image.
 - TouchDesigner must stay the frontmost application while it generates; Apple refuses to generate for a background app.
 - Prompts are a short concept, not a sentence, and brand names and real people are refused.
 

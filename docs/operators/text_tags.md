@@ -1,6 +1,6 @@
 # Text Tags
 
-*CHOP · v0.2.0*
+*CHOP · v0.2.1*
 
 <!-- screenshot: drop a PNG at docs/images/text_tags.png and rerun the generator -->
 
@@ -13,6 +13,10 @@ Text.
 ## Outputs
 
 The tags, as a table.
+
+## Worth knowing
+
+- **Not realtime.** A second or two per request.
 
 ## Parameters
 

@@ -1,6 +1,6 @@
 # Object Capture
 
-*POP · v0.1.1*
+*POP · v0.1.2*
 
 <!-- screenshot: drop a PNG at docs/images/object_capture.png and rerun the generator -->
 
@@ -16,6 +16,7 @@ Mesh geometry plus baked albedo, normal and occlusion maps.
 
 ## Worth knowing
 
+- **Not realtime.** A capture runs for tens of seconds to minutes, dominated by aligning the photographs rather than by the detail setting.
 - Timing is dominated by alignment, not by the detail setting.
 - Captures arrive in real-world metres; scale and centre are applied on the way out so they stay adjustable.
 

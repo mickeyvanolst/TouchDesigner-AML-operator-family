@@ -1,6 +1,6 @@
 # Depth Metric
 
-*TOP · v0.1.1*
+*TOP · v0.1.3*
 
 <!-- screenshot: drop a PNG at docs/images/depth_metric.png and rerun the generator -->
 
@@ -18,6 +18,7 @@ A metric depth map, plus `focal_px` as a channel.
 
 ## Worth knowing
 
+- **Not a realtime operator.** It runs at roughly 3-4 s per frame on Apple silicon, against about 48 ms for Depth Map beside it. Drive it on demand, or raise Process Interval — a camera wired straight in will look broken when it is only slow.
 - Result Mode is pinned to Raw Tensor on purpose: normalising the output would throw away the metres, which are the whole point.
 - **Fit Mode** changes the answer — stretching matches the model's own reference behaviour; letterboxing reads a different distance because it changes the apparent field of view.
 

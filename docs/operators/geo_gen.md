@@ -1,6 +1,6 @@
 # Geo Gen
 
-*POP · v0.2.5*
+*POP · v0.2.6*
 
 <!-- screenshot: drop a PNG at docs/images/geo_gen.png and rerun the generator -->
 
@@ -18,6 +18,7 @@ Geometry with `P`, `Color`, `N` and `Tex`, plus baked albedo, UV-layout, positio
 
 ## Worth knowing
 
+- **Generate-driven, not per frame.** A mesh takes a few seconds, and longer at higher Grid Res with UV unwrap.
 - Needs a clear subject on a clean background; a busy photo gives a confused mesh.
 
 ## Parameters

@@ -1,6 +1,6 @@
 # Translate
 
-*CHOP · v0.1.0*
+*CHOP · v0.1.1*
 
 <!-- screenshot: drop a PNG at docs/images/translate.png and rerun the generator -->
 
@@ -16,6 +16,7 @@ The translation, plus status and timing channels.
 
 ## Worth knowing
 
+- **Not realtime.** About a second per translation.
 - Language packs are the ones macOS has installed — a missing pair is reported rather than failing quietly.
 
 ## Parameters

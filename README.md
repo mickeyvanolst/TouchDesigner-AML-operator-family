@@ -32,6 +32,42 @@ issue](../../issues/new/choose).**
 
 ---
 
+## Why native?
+
+Most ML toolkits for TouchDesigner run their models *next to* TD — in an
+embedded browser (MediaPipe via a Web Render TOP), a Python process, or an
+external app — and stream results back over WebSockets or shared memory.
+That works, but you pay for it on every frame. AML calls the macOS ML
+stack **in-process**, and that changes the economics:
+
+- **Zero transport.** Results are TouchDesigner channels and tables the
+  moment inference ends — no socket hop, no JSON serialization, no
+  browser compositor in the loop. The pipeline is a fixed 1-frame latency,
+  and every operator reports its actual inference milliseconds.
+- **Apple's silicon, Apple's scheduler.** Vision and Core ML dispatch to
+  the Neural Engine and GPU with models Apple tunes per OS release. A
+  depth map or YOLO26 pass runs in single-digit milliseconds without
+  competing with your render thread the way a bundled Chromium does.
+- **A ~100 KB plugin instead of a browser.** No embedded web runtime, no
+  Python environment, no npm install, no model downloads from third-party
+  CDNs — the whole family is native bundles plus a hash-verified model
+  payload.
+- **Capabilities a pose-tracking wrapper can't reach.** Because the OS
+  *is* the ML stack, the family extends past tracking into OCR, depth,
+  segmentation, image similarity, speech in both directions, and an
+  on-device LLM with structured output — all first-class operators.
+- **Boring in the good way.** Notarized Developer ID signing, per-member
+  versioning, permissions handled correctly (a bundled helper app owns
+  the speech permission — TouchDesigner is never modified), and nothing
+  ever leaves the machine.
+
+The trade-off is explicit: **macOS on Apple Silicon only.** If you need
+Windows, the browser-based toolkits are the right call — this project is
+what you reach for when you're on a Mac and want the platform's full
+native performance.
+
+---
+
 ## The operators
 
 Most of these need no download at all — they use frameworks that ship with

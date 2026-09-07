@@ -1,6 +1,6 @@
 # Geo Gen
 
-*POP · v0.3.2*
+*POP · v0.3.3*
 
 <!-- screenshot: drop a PNG at docs/images/geo_gen.png and rerun the generator -->
 
@@ -28,7 +28,7 @@ Geometry with `P`, `Color`, `N` and `Tex`, plus baked albedo, UV-layout, positio
 | Parameter | Type | Default | Options |
 |---|---|---|---|
 | **Enable** | toggle | True |  |
-| **Model** | menu | triposr_coreml | triposr-coreml, Custom file... |
+| **Model** | menu | triposr_coreml | TripoSR (image to 3D), Custom file... |
 | **Model Folder** | folder |  |  |
 | **Model Status** | text |  |  |
 | **Manage Models** | button |  |  |

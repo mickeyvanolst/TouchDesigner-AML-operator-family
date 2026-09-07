@@ -1,6 +1,6 @@
 # YOLO Classify
 
-*TOP · v0.4.2*
+*TOP · v0.4.3*
 
 <!-- screenshot: drop a PNG at docs/images/yolo_classify.png and rerun the generator -->
 

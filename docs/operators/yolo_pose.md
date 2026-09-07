@@ -1,6 +1,6 @@
 # YOLO Pose
 
-*TOP · v0.6.2*
+*TOP · v0.6.3*
 
 <!-- screenshot: drop a PNG at docs/images/yolo_pose.png and rerun the generator -->
 

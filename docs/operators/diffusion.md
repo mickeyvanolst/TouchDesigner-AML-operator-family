@@ -1,6 +1,6 @@
 # Diffusion
 
-*TOP · v0.7.2*
+*TOP · v0.7.3*
 
 <!-- screenshot: drop a PNG at docs/images/diffusion.png and rerun the generator -->
 
@@ -21,6 +21,7 @@ The generated image.
 - **Not realtime.** Seconds per image, Generate-driven.
 - Guidance 0 is unconditional — SD-Turbo wants guidance 1.0 and 2 steps.
 - ControlNet selection changes the pipeline identity, so it reloads.
+- **Control Net** lists what the loaded pipeline actually carries — the sd15-controlnet pipeline ships Canny, Depth, OpenPose and Scribble. The menu reads `None` until a pipeline finishes loading, and stays that way for a pipeline built without ControlNet.
 
 ## Parameters
 

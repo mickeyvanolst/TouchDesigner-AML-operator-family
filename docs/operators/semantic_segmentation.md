@@ -1,6 +1,6 @@
 # Semantic Segmentation
 
-*TOP · v0.4.1*
+*TOP · v0.4.2*
 
 <!-- screenshot: drop a PNG at docs/images/semantic_segmentation.png and rerun the generator -->
 
@@ -20,7 +20,7 @@ A class map, overlay or binary mask, and **out_segnames** — the classes actual
 
 - **Selected Class** with the single-class visualisation is how you get a matte for one thing.
 - Three models, three vocabularies: **DeepLab V3** (21 PASCAL VOC classes), **DETR ResNet-50** (133 COCO-panoptic classes, including sky, road and grass) and **Face Parsing** (19 facial classes). Class names come from the model itself where it ships them, which is why DETR reports `sky (other)` rather than `class 119`.
-- **Face Parsing wants a face, not a scene.** It is trained on tight portrait crops, so a wide camera frame with a small head in it comes back as noise rather than facial features. Crop to the face first — the bounding box from Face Detect is a good source — and keep that crop square: the input is scaled to the model's square input, so a 16:9 crop reaches the model squashed.
+- **Face Parsing wants a face, not a scene.** It is trained on tight portrait crops, so a wide camera frame with a small head in it comes back as noise rather than facial features. Crop to the face first — the bounding box from Face Detect is a good source. Shape matters too: the model's input is square, and the default **Fit Mode** of Stretch squashes a 16:9 crop to fit it. Either crop square, or set Fit Mode to Crop (fill).
 
 ## Parameters
 
@@ -32,6 +32,7 @@ A class map, overlay or binary mask, and **out_segnames** — the classes actual
 | **Model** | menu | deeplabv3fp16_mlmodel | DeepLab V3 (segmentation), DETR ResNet-50 (segmentation), Face parsing (19 classes), Custom file... |
 | **Model Path** | file |  |  |
 | **Model Status** | text |  |  |
+| **Fit Mode** | menu | Stretch | Stretch, Letterbox (pad), Crop (fill) |
 | **Manage Models** | button |  |  |
 | **Compute Units** | menu | All | All (Auto), CPU + Neural Engine, CPU + GPU, CPU Only |
 | **Reload Model** | button |  |  |

@@ -1,6 +1,6 @@
 # Depth Map
 
-*TOP · v0.3.2*
+*TOP · v0.3.3*
 
 <!-- screenshot: drop a PNG at docs/images/depth_map.png and rerun the generator -->
 
@@ -26,6 +26,7 @@ A depth image. Values are relative, not metres — see **Depth Metric** if you n
 | **Model** | menu | depthanythingv2smallf16_mlpackage | Depth Anything V2 Small, Custom file... |
 | **Model Path** | file |  |  |
 | **Model Status** | text |  |  |
+| **Fit Mode** | menu | Stretch | Stretch, Letterbox (pad), Crop (fill) |
 | **Manage Models** | button |  |  |
 | **Compute Units** | menu | All | All (Auto), CPU + Neural Engine, CPU + GPU, CPU Only |
 | **Reload Model** | button |  |  |

@@ -1,6 +1,6 @@
 # Pose Tracker
 
-*CHOP · v0.6.1*
+*CHOP · v0.7.0*
 
 <!-- screenshot: drop a PNG at docs/images/pose_tracker.png and rerun the generator -->
 
@@ -16,6 +16,7 @@ Channels, one sample per person slot. Body and hand channels are prefixed `pose_
 
 ## Worth knowing
 
+- Face landmarks come from the same Vision request the separate Face Landmarks operator used to run — that operator was folded into this one, and its `GetFaces()` and `FaceCount` are available here. For face work alone, turn Detect Body, Detect Pose and Detect Hands off: the pose request is then skipped entirely and the cost matches the old dedicated operator (measured 5.9 ms against 6.1 ms).
 - Face landmarks produce far more samples than people — `numSamples` is `max(Max People, Max Faces x points-per-face)`, which is 261 with faces on. Read the person count from **Max People**, never from the sample count.
 - 3D pose is expensive (~300 ms against ~12 ms for everything else) so it runs on its own queue: 2D tracking stays at full rate while the skeleton refreshes a few times a second.
 - A channel that is not being produced reads as `None`. Guard any expression that indexes one, or turning a toggle off will put your own nodes into error.
@@ -68,6 +69,8 @@ Reachable on the operator via its extension:
 
 - `ActivePeople`
 - `DoCallback`
+- `FaceCount`
+- `GetFaces`
 - `GetJoints`
 
 ## Callbacks

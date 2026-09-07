@@ -73,9 +73,9 @@ native performance.
 Most of these need no download at all — they use frameworks that ship with
 macOS.
 
-**Vision, no download** — Barcode/QR Reader, Contours, Face Landmarks, Image
-Classify, Image Similarity, Object Tracker, OCR, Person Mask, Pose Tracker,
-Saliency, Subject Mask
+**Vision, no download** — Barcode/QR Reader, Contours, Image Classify,
+Image Similarity, Object Tracker, OCR, Person Mask, Pose Tracker, Saliency,
+Subject Mask
 
 **Models** — CoreML Model, CoreML Data, Depth Map, Depth Metric, Diffusion,
 Geo Gen, YOLO Classify / Detect / Pose / Segment

@@ -1,6 +1,6 @@
 # Local LLM
 
-*CHOP · v0.2.1*
+*CHOP · v0.2.2*
 
 <!-- screenshot: drop a PNG at docs/images/local_llm.png and rerun the generator -->
 

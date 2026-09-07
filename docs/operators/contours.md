@@ -1,6 +1,6 @@
 # Contours
 
-*POP · v0.1.2*
+*POP · v0.1.3*
 
 <!-- screenshot: drop a PNG at docs/images/contours.png and rerun the generator -->
 

@@ -1,6 +1,6 @@
 # Face Landmarks
 
-*CHOP · v0.3.0*
+*CHOP · v0.3.1*
 
 <!-- screenshot: drop a PNG at docs/images/face_landmarks.png and rerun the generator -->
 

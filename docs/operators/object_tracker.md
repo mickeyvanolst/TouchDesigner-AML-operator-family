@@ -1,6 +1,6 @@
 # Object Tracker
 
-*TOP · v0.3.0*
+*TOP · v0.3.1*
 
 <!-- screenshot: drop a PNG at docs/images/object_tracker.png and rerun the generator -->
 

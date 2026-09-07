@@ -11,6 +11,20 @@ not get saved into your project.
 
 ---
 
+## Choosing which model an operator uses
+
+You usually do not need this window to switch models. Every model-backed
+operator has a **Model** menu listing the models it can use — including ones
+you have not downloaded yet, marked `(not installed)` so you can see what is
+available before committing to the download. Pick one and the operator finds
+it wherever it lives.
+
+Come here when the model you picked is not on the machine yet, or to remove
+one you no longer want. **Custom file…** at the end of the menu is the other
+route: it frees the operator's **Model Path** field for a model of your own.
+
+---
+
 ## Opening it
 
 Press **Manage Models** on any operator that uses a model. The window opens

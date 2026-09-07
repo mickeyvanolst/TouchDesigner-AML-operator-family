@@ -1,12 +1,12 @@
 # Diffusion
 
-*TOP · v0.6.6*
+*TOP · v0.7.2*
 
 <!-- screenshot: drop a PNG at docs/images/diffusion.png and rerun the generator -->
 
 Stable Diffusion running entirely on your machine: text to image, image to image, ControlNet and inpainting. The model is a pipeline folder you point it at, so you choose the model.
 
-> **Needs a model.** The operator says so on the node and offers a **Manage Models** button; the Model Manager shows each model's size and licence and asks before downloading anything.
+> **Needs a model.** Pick one from the **Model** menu: it lists the models this operator can use and marks the ones you have not downloaded, and **Custom file…** frees **Model Path** for a model of your own. The node says when a model is missing and offers a **Manage Models** button; the Model Manager shows each model's size and licence and asks before downloading anything.
 
 ## Inputs
 
@@ -29,6 +29,7 @@ The generated image.
 | Parameter | Type | Default | Options |
 |---|---|---|---|
 | **Enable** | toggle | False |  |
+| **Model** | menu | sd_turbo | SD-Turbo (1–4 steps)  (not installed), Stable Diffusion 2 base, SD 1.5 + ControlNet, DreamShaper (SD 1.5), SD 1.5 landscape (768x512), Stable Diffusion XL base, Custom file... |
 | **Model Folder** | folder |  |  |
 | **Model Status** | text |  |  |
 | **Manage Models** | button |  |  |

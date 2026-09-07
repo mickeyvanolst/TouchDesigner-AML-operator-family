@@ -1,12 +1,12 @@
 # YOLO Detect
 
-*TOP · v0.4.3*
+*TOP · v0.5.2*
 
 <!-- screenshot: drop a PNG at docs/images/yolo_detect.png and rerun the generator -->
 
 Object detection with boxes, labels and persistent track IDs, using Ultralytics YOLO models.
 
-> **Needs a model.** The operator says so on the node and offers a **Manage Models** button; the Model Manager shows each model's size and licence and asks before downloading anything.
+> **Needs a model.** Pick one from the **Model** menu: it lists the models this operator can use and marks the ones you have not downloaded, and **Custom file…** frees **Model Path** for a model of your own. The node says when a model is missing and offers a **Manage Models** button; the Model Manager shows each model's size and licence and asks before downloading anything.
 
 ## Inputs
 
@@ -23,6 +23,7 @@ A visualisation plus a table of detections.
 | Parameter | Type | Default | Options |
 |---|---|---|---|
 | **Source TOP** | TOP |  |  |
+| **Model** | menu | yolo26n_seg_mlpackage | YOLO26 nano (detect + segment), Custom file... |
 | **Model Path** | file |  |  |
 | **Model Status** | text |  |  |
 | **Manage Models** | button |  |  |

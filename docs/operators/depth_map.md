@@ -1,12 +1,12 @@
 # Depth Map
 
-*TOP · v0.2.3*
+*TOP · v0.3.2*
 
 <!-- screenshot: drop a PNG at docs/images/depth_map.png and rerun the generator -->
 
 Estimates depth from a single ordinary image — no depth camera. Good for parallax, fog, displacement and depth-of-field.
 
-> **Needs a model.** The operator says so on the node and offers a **Manage Models** button; the Model Manager shows each model's size and licence and asks before downloading anything.
+> **Needs a model.** Pick one from the **Model** menu: it lists the models this operator can use and marks the ones you have not downloaded, and **Custom file…** frees **Model Path** for a model of your own. The node says when a model is missing and offers a **Manage Models** button; the Model Manager shows each model's size and licence and asks before downloading anything.
 
 ## Inputs
 
@@ -23,6 +23,7 @@ A depth image. Values are relative, not metres — see **Depth Metric** if you n
 | Parameter | Type | Default | Options |
 |---|---|---|---|
 | **Source TOP** | TOP |  |  |
+| **Model** | menu | depthanythingv2smallf16_mlpackage | Depth Anything V2 Small, Custom file... |
 | **Model Path** | file |  |  |
 | **Model Status** | text |  |  |
 | **Manage Models** | button |  |  |

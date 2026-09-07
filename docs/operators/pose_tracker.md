@@ -1,6 +1,6 @@
 # Pose Tracker
 
-*CHOP · v0.5.2*
+*CHOP · v0.6.1*
 
 <!-- screenshot: drop a PNG at docs/images/pose_tracker.png and rerun the generator -->
 
@@ -26,6 +26,7 @@ Channels, one sample per person slot. Body and hand channels are prefixed `pose_
 
 | Parameter | Type | Default | Options |
 |---|---|---|---|
+| **Detect Face** | toggle | True |  |
 | **Max Faces** | number | 3 |  |
 | **Track Eyes** | toggle | True |  |
 | **Track Brows** | toggle | True |  |

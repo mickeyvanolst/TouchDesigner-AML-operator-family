@@ -1,12 +1,12 @@
 # Geo Gen
 
-*POP · v0.2.6*
+*POP · v0.3.2*
 
 <!-- screenshot: drop a PNG at docs/images/geo_gen.png and rerun the generator -->
 
 One image of an object becomes a coloured, UV-unwrapped 3D mesh, in a couple of seconds. The picture is reprojected onto the mesh, so the result looks like the thing you photographed.
 
-> **Needs a model.** The operator says so on the node and offers a **Manage Models** button; the Model Manager shows each model's size and licence and asks before downloading anything.
+> **Needs a model.** Pick one from the **Model** menu: it lists the models this operator can use and marks the ones you have not downloaded, and **Custom file…** frees **Model Path** for a model of your own. The node says when a model is missing and offers a **Manage Models** button; the Model Manager shows each model's size and licence and asks before downloading anything.
 
 ## Inputs
 
@@ -28,6 +28,7 @@ Geometry with `P`, `Color`, `N` and `Tex`, plus baked albedo, UV-layout, positio
 | Parameter | Type | Default | Options |
 |---|---|---|---|
 | **Enable** | toggle | True |  |
+| **Model** | menu | triposr_coreml | triposr-coreml, Custom file... |
 | **Model Folder** | folder |  |  |
 | **Model Status** | text |  |  |
 | **Manage Models** | button |  |  |

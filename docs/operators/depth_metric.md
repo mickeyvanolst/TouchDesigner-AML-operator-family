@@ -1,12 +1,12 @@
 # Depth Metric
 
-*TOP · v0.1.3*
+*TOP · v0.2.2*
 
 <!-- screenshot: drop a PNG at docs/images/depth_metric.png and rerun the generator -->
 
 Apple's Depth Pro: depth in **real metres** from one image, with no camera intrinsics, plus the estimated focal length. This is what you want for camera reprojection or anything at real-world scale.
 
-> **Needs a model.** The operator says so on the node and offers a **Manage Models** button; the Model Manager shows each model's size and licence and asks before downloading anything.
+> **Needs a model.** Pick one from the **Model** menu: it lists the models this operator can use and marks the ones you have not downloaded, and **Custom file…** frees **Model Path** for a model of your own. The node says when a model is missing and offers a **Manage Models** button; the Model Manager shows each model's size and licence and asks before downloading anything.
 
 ## Inputs
 
@@ -29,6 +29,7 @@ A metric depth map, plus `focal_px` as a channel.
 | Parameter | Type | Default | Options |
 |---|---|---|---|
 | **Source TOP** | TOP |  |  |
+| **Model** | menu | depthprometric1024_mlpackage | Depth Pro (metric depth)  (not installed), Custom file... |
 | **Model Path** | file |  |  |
 | **Model Status** | text |  |  |
 | **Fit Mode** | menu | Stretch | Stretch, Letterbox (pad), Crop (fill) |

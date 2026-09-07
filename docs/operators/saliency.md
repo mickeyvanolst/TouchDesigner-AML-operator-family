@@ -1,6 +1,6 @@
 # Saliency
 
-*TOP · v0.2.2*
+*TOP · v0.2.3*
 
 <!-- screenshot: drop a PNG at docs/images/saliency.png and rerun the generator -->
 

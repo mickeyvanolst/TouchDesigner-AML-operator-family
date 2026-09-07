@@ -1,6 +1,6 @@
 # Translate
 
-*CHOP · v0.1.1*
+*CHOP · v0.1.2*
 
 <!-- screenshot: drop a PNG at docs/images/translate.png and rerun the generator -->
 

@@ -40,6 +40,12 @@ Some operators use a model that is not part of macOS — depth, segmentation,
 YOLO, Geo Gen, Diffusion. Those say so on the node, naming the model and its
 size, and carry a **Manage Models** button.
 
+Each of them has a **Model** menu listing the models it can use, with the
+ones you have not downloaded marked as such. Choosing a model is normally
+all you do — the operator finds it wherever it is installed. The last entry,
+**Custom file…**, frees the **Model Path** field for a converted model of
+your own.
+
 The Model Manager lists every model AML knows about: size, licence, which
 operators use it, whether it is on this machine, and a link to where it
 comes from. Nothing downloads until you ask.

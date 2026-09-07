@@ -1,12 +1,12 @@
 # YOLO Classify
 
-*TOP · v0.3.3*
+*TOP · v0.4.2*
 
 <!-- screenshot: drop a PNG at docs/images/yolo_classify.png and rerun the generator -->
 
 Whole-image classification with a YOLO classifier.
 
-> **Needs a model.** The operator says so on the node and offers a **Manage Models** button; the Model Manager shows each model's size and licence and asks before downloading anything.
+> **Needs a model.** Pick one from the **Model** menu: it lists the models this operator can use and marks the ones you have not downloaded, and **Custom file…** frees **Model Path** for a model of your own. The node says when a model is missing and offers a **Manage Models** button; the Model Manager shows each model's size and licence and asks before downloading anything.
 
 ## Inputs
 
@@ -23,6 +23,7 @@ A ranked label table.
 | Parameter | Type | Default | Options |
 |---|---|---|---|
 | **Source TOP** | TOP |  |  |
+| **Model** | menu | yolo11n_cls_mlpackage | YOLO11 nano (classify), Custom file... |
 | **Model Path** | file |  |  |
 | **Model Status** | text |  |  |
 | **Manage Models** | button |  |  |

@@ -1,6 +1,6 @@
 # Depth Metric
 
-*TOP · v0.2.3*
+*TOP · v0.2.4*
 
 <!-- screenshot: drop a PNG at docs/images/depth_metric.png and rerun the generator -->
 
@@ -29,7 +29,7 @@ A metric depth map, plus `focal_px` as a channel.
 | Parameter | Type | Default | Options |
 |---|---|---|---|
 | **Source TOP** | TOP |  |  |
-| **Model** | menu | depthprometric1024_mlpackage | Depth Pro (metric depth)  (not installed), Custom file... |
+| **Model** | menu | depthprometric1024_mlpackage | Depth Pro (metric depth), Custom file... |
 | **Model Path** | file |  |  |
 | **Model Status** | text |  |  |
 | **Fit Mode** | menu | Stretch | Stretch, Letterbox (pad), Crop (fill) |

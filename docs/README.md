@@ -9,7 +9,6 @@ See also: [getting started](getting-started.md) · [troubleshooting](troubleshoo
 ## Vision — no download
 
 - [Barcode / QR Reader](operators/code_reader.md) — Reads QR codes, barcodes and the other symbologies Vision supports, returning the payload and where it sits in frame.
-- [Contours](operators/contours.md) — Traces the outlines in an image and hands them back as geometry — one line strip per contour, with the nesting depth of holes, so you can draw, extrude or animate real edges.
 - [Image Classify](operators/image_classify.md) — Names what is in a picture, using Apple's built-in classifier — no model download.
 - [Image Similarity](operators/image_similarity.md) — How alike two images are, using Vision's feature prints — a perceptual distance rather than a pixel difference.
 - [Object Tracker](operators/object_tracker.md) — Follows things across frames and gives each one a persistent ID, so you can tell that the person at the left of this frame is the same person who was in the middle of the last one.

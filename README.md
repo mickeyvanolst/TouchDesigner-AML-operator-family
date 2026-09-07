@@ -73,7 +73,7 @@ native performance.
 Most of these need no download at all — they use frameworks that ship with
 macOS.
 
-**Vision, no download** — Barcode/QR Reader, Contours, Image Classify,
+**Vision, no download** — Barcode/QR Reader, Image Classify,
 Image Similarity, Object Tracker, OCR, Person Mask, Pose Tracker, Saliency,
 Subject Mask
 

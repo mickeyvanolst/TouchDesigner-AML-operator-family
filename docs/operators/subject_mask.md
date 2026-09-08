@@ -1,6 +1,6 @@
 # Subject Mask
 
-*TOP · v0.1.2*
+*TOP · v0.2.0*
 
 <!-- screenshot: drop a PNG at docs/images/subject_mask.png and rerun the generator -->
 
@@ -12,7 +12,7 @@ An image.
 
 ## Outputs
 
-A soft mask at the input resolution.
+A soft mask at the input resolution. Or a **cut-out**: the source with the subject kept and everything else transparent, premultiplied, ready for an Over TOP with no extra operators.
 
 ## Worth knowing
 
@@ -26,7 +26,7 @@ A soft mask at the input resolution.
 |---|---|---|---|
 | **Source TOP** | TOP |  |  |
 | **Instance** | number | 0 |  |
-| **Visualization** | menu | Mask | Mask, Heatmap, Overlay |
+| **Visualization** | menu | Mask | Mask, Heatmap, Overlay, Cut-out |
 | **Threshold** | number | 0.5 |  |
 | **Overlay Alpha** | number | 0.7 |  |
 

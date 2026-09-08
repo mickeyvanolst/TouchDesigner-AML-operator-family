@@ -1,6 +1,6 @@
 # Diffusion
 
-*TOP · v0.7.5*
+*TOP · v0.7.6*
 
 <!-- screenshot: drop a PNG at docs/images/diffusion.png and rerun the generator -->
 
@@ -18,6 +18,7 @@ The generated image.
 
 ## Worth knowing
 
+- **If a model never finishes loading, switch Compute Units to CPU+GPU.** Under All or CPU+ANE some pipelines hang in CoreML's compiler with no error — measured on sd2-base and the 768x512 landscape model, both of which load in about 15 s under CPU+GPU. Meanwhile the previous model keeps generating, so a 768x512 model that "outputs 512x512" is the old one still answering. The operator warns after 150 s of loading and says which model is really running.
 - **Not realtime.** Seconds per image, Generate-driven.
 - Guidance 0 is unconditional — SD-Turbo wants guidance 1.0 and 2 steps.
 - ControlNet selection changes the pipeline identity, so it reloads.
@@ -51,7 +52,7 @@ The generated image.
 | **Scheduler** | StrMenu |  | PNDM, DPM-Solver++, DPM-Solver++ Karras (quality at 6-8 steps) |
 | **Source TOP** | TOP |  |  |
 | **Control TOP** | TOP |  |  |
-| **Control Net** | StrMenu |  | None, Canny, Depth, OpenPose, Scribble |
+| **Control Net** | StrMenu |  | None |
 | **Control Net Weight** | number | 1.0 |  |
 | **Use Source Image (img2img)** | toggle | False |  |
 | **Source Strength** | number | 0.0 |  |

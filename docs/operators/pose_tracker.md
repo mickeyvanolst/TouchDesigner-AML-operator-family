@@ -1,6 +1,6 @@
 # Pose Tracker
 
-*CHOP · v0.7.0*
+*CHOP · v0.8.0*
 
 <!-- screenshot: drop a PNG at docs/images/pose_tracker.png and rerun the generator -->
 
@@ -12,7 +12,7 @@ An image, wired into the first input or set as **Source**.
 
 ## Outputs
 
-Channels, one sample per person slot. Body and hand channels are prefixed `pose_`, face landmarks `face_` — so `pose*` in a Select CHOP gets you everything about bodies and `face*` everything about faces. With **Detect 3D Pose** on, the member also emits the skeleton as geometry on `out_pose3d`: a point per joint carrying `P` in metres, and one line per bone.
+Two CHOP outputs. `out_channels` carries the body and hand channels, prefixed `pose_`, one sample per person slot. `out_faces` carries the face landmarks, prefixed `face_`, one sample per landmark point — their own output because the sample count is Max Faces × 87, which would otherwise pad every body channel out to that length. With **Detect 3D Pose** on, the member also emits the skeleton as geometry on `out_pose3d`: a point per joint carrying `P` in metres, and one line per bone.
 
 ## Worth knowing
 

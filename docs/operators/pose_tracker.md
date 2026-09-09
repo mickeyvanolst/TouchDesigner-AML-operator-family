@@ -1,6 +1,6 @@
 # Pose Tracker
 
-*CHOP · v0.8.1*
+*CHOP · v0.8.2*
 
 <!-- screenshot: drop a PNG at docs/images/pose_tracker.png and rerun the generator -->
 

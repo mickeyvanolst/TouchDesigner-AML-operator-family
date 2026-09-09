@@ -1,6 +1,6 @@
 # Speech Synth
 
-*CHOP · v0.2.4*
+*CHOP · v0.2.5*
 
 <!-- screenshot: drop a PNG at docs/images/speech_synth.png and rerun the generator -->
 

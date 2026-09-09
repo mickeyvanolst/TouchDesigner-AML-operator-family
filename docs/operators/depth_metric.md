@@ -1,6 +1,6 @@
 # Depth Metric
 
-*TOP · v0.2.6*
+*TOP · v0.2.7*
 
 <!-- screenshot: drop a PNG at docs/images/depth_metric.png and rerun the generator -->
 

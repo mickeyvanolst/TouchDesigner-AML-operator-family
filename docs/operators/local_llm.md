@@ -1,6 +1,6 @@
 # Local LLM
 
-*CHOP · v0.2.2*
+*CHOP · v0.2.3*
 
 <!-- screenshot: drop a PNG at docs/images/local_llm.png and rerun the generator -->
 
@@ -13,6 +13,14 @@ A prompt parameter or a DAT.
 ## Outputs
 
 Streamed text, progress and timing channels.
+
+## Built on
+
+This operator is a thin layer over the following; their own documentation is the reference for what it can and cannot do.
+
+- [FoundationModels](https://developer.apple.com/documentation/foundationmodels) — Apple Intelligence's on-device language model (macOS 26)
+- [SystemLanguageModel](https://developer.apple.com/documentation/foundationmodels/systemlanguagemodel) — availability and the reasons it is not
+- [Generating with guided output](https://developer.apple.com/documentation/foundationmodels/generating-swift-data-structures-with-guided-generation) — what the Schema DAT builds on
 
 ## Worth knowing
 

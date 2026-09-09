@@ -14,6 +14,17 @@ An image, wired into the first input or set as **Source**.
 
 Two CHOP outputs. `out_channels` carries the body and hand channels, prefixed `pose_`, one sample per person slot. `out_faces` carries the face landmarks, prefixed `face_`, one sample per landmark point — their own output because the sample count is Max Faces × 87, which would otherwise pad every body channel out to that length. With **Detect 3D Pose** on, the member also emits the skeleton as geometry on `out_pose3d`: a point per joint carrying `P` in metres, and one line per bone.
 
+## Built on
+
+This operator is a thin layer over the following; their own documentation is the reference for what it can and cannot do.
+
+- [Vision framework](https://developer.apple.com/documentation/vision) — Apple's on-device image analysis
+- [VNDetectHumanBodyPoseRequest](https://developer.apple.com/documentation/vision/vndetecthumanbodyposerequest) — 19 body joints
+- [VNDetectHumanHandPoseRequest](https://developer.apple.com/documentation/vision/vndetecthumanhandposerequest) — 21 joints per hand
+- [VNDetectFaceLandmarksRequest](https://developer.apple.com/documentation/vision/vndetectfacelandmarksrequest) — face landmarks
+- [VNDetectHumanRectanglesRequest](https://developer.apple.com/documentation/vision/vndetecthumanrectanglesrequest) — body bounding boxes
+- [VNDetectHumanBodyPose3DRequest](https://developer.apple.com/documentation/vision/vndetecthumanbodypose3drequest) — 3D joints in metres (macOS 14+)
+
 ## Worth knowing
 
 - Face landmarks come from the same Vision request the separate Face Landmarks operator used to run — that operator was folded into this one, and its `GetFaces()` and `FaceCount` are available here. For face work alone, turn Detect Body, Detect Pose and Detect Hands off: the pose request is then skipped entirely and the cost matches the old dedicated operator (measured 5.9 ms against 6.1 ms).

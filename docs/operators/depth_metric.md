@@ -1,6 +1,6 @@
 # Depth Metric
 
-*TOP · v0.2.4*
+*TOP · v0.2.5*
 
 <!-- screenshot: drop a PNG at docs/images/depth_metric.png and rerun the generator -->
 
@@ -15,6 +15,17 @@ An image.
 ## Outputs
 
 A metric depth map, plus `focal_px` as a channel.
+
+## Built on
+
+This operator is a thin layer over the following; their own documentation is the reference for what it can and cannot do.
+
+- [Core ML](https://developer.apple.com/documentation/coreml) — runs the model on the CPU, GPU and Neural Engine
+- [Depth Pro](https://github.com/apple/ml-depth-pro) — Apple's metric depth model: what the metres and the focal length mean
+
+Models it downloads through the Model Manager, each under its own licence:
+
+- [Depth Pro (metric depth)](https://github.com/apple/ml-depth-pro) — Apple sample-code license
 
 ## Worth knowing
 

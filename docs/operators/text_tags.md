@@ -1,6 +1,6 @@
 # Text Tags
 
-*CHOP · v0.2.3*
+*CHOP · v0.2.4*
 
 <!-- screenshot: drop a PNG at docs/images/text_tags.png and rerun the generator -->
 
@@ -13,6 +13,13 @@ Text.
 ## Outputs
 
 The tags, as a table.
+
+## Built on
+
+This operator is a thin layer over the following; their own documentation is the reference for what it can and cannot do.
+
+- [FoundationModels](https://developer.apple.com/documentation/foundationmodels) — Apple Intelligence's on-device language model (macOS 26)
+- [SystemLanguageModel](https://developer.apple.com/documentation/foundationmodels/systemlanguagemodel) — availability and the reasons it is not
 
 ## Worth knowing
 

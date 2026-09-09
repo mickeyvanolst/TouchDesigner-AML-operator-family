@@ -1,6 +1,6 @@
 # Speech Synth
 
-*CHOP · v0.2.2*
+*CHOP · v0.2.3*
 
 <!-- screenshot: drop a PNG at docs/images/speech_synth.png and rerun the generator -->
 
@@ -13,6 +13,13 @@ None — the text is a parameter.
 ## Outputs
 
 48 kHz mono audio plus word-timing channels.
+
+## Built on
+
+This operator is a thin layer over the following; their own documentation is the reference for what it can and cannot do.
+
+- [AVSpeechSynthesizer](https://developer.apple.com/documentation/avfaudio/avspeechsynthesizer) — the synthesizer
+- [AVSpeechSynthesisVoice](https://developer.apple.com/documentation/avfaudio/avspeechsynthesisvoice) — the voices, and where the better ones are downloaded
 
 ## Parameters
 

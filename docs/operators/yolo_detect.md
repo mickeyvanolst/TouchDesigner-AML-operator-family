@@ -1,6 +1,6 @@
 # YOLO Detect
 
-*TOP · v0.5.3*
+*TOP · v0.5.4*
 
 <!-- screenshot: drop a PNG at docs/images/yolo_detect.png and rerun the generator -->
 
@@ -15,6 +15,18 @@ An image.
 ## Outputs
 
 A visualisation plus a table of detections.
+
+## Built on
+
+This operator is a thin layer over the following; their own documentation is the reference for what it can and cannot do.
+
+- [Core ML](https://developer.apple.com/documentation/coreml) — runs the model on the CPU, GPU and Neural Engine
+- [Ultralytics YOLO26](https://docs.ultralytics.com/models/yolo26/) — the detector and its 80 COCO classes
+- [Ultralytics export to Core ML](https://docs.ultralytics.com/integrations/coreml/) — how custom-trained models are exported
+
+Models it downloads through the Model Manager, each under its own licence:
+
+- [YOLO26 nano (detect + segment)](https://github.com/ultralytics/ultralytics) — AGPL-3.0
 
 ## Parameters
 

@@ -7,7 +7,7 @@ not part of macOS, and the Model Manager is where those live.
 It is a window, not an operator. It does not go in your network and it does
 not get saved into your project.
 
-<!-- screenshot: drop a PNG at docs/images/model-manager.png -->
+![The Model Manager window](images/model_manager.png)
 
 ---
 

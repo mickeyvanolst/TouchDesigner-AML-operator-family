@@ -1,6 +1,6 @@
 # Person Mask
 
-*TOP · v0.2.3*
+*TOP · v0.2.4*
 
 <!-- screenshot: drop a PNG at docs/images/person_mask.png and rerun the generator -->
 
@@ -13,6 +13,14 @@ An image.
 ## Outputs
 
 A mask, heatmap or overlay, depending on **Visualization**.
+
+## Built on
+
+This operator is a thin layer over the following; their own documentation is the reference for what it can and cannot do.
+
+- [Vision framework](https://developer.apple.com/documentation/vision) — Apple's on-device image analysis
+- [VNGeneratePersonSegmentationRequest](https://developer.apple.com/documentation/vision/vngeneratepersonsegmentationrequest) — the person mask
+- [VNGeneratePersonInstanceMaskRequest](https://developer.apple.com/documentation/vision/vngeneratepersoninstancemaskrequest) — one mask per person (macOS 14+)
 
 ## Worth knowing
 

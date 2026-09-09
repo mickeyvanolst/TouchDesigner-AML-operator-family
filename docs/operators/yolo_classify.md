@@ -1,6 +1,6 @@
 # YOLO Classify
 
-*TOP · v0.4.3*
+*TOP · v0.4.4*
 
 <!-- screenshot: drop a PNG at docs/images/yolo_classify.png and rerun the generator -->
 
@@ -15,6 +15,17 @@ An image.
 ## Outputs
 
 A ranked label table.
+
+## Built on
+
+This operator is a thin layer over the following; their own documentation is the reference for what it can and cannot do.
+
+- [Core ML](https://developer.apple.com/documentation/coreml) — runs the model on the CPU, GPU and Neural Engine
+- [Ultralytics YOLO11 classify](https://docs.ultralytics.com/tasks/classify/) — the ImageNet-1k classifier and custom training
+
+Models it downloads through the Model Manager, each under its own licence:
+
+- [YOLO11 nano (classify)](https://github.com/ultralytics/ultralytics) — AGPL-3.0
 
 ## Parameters
 

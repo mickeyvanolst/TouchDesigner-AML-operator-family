@@ -1,6 +1,6 @@
 # Sound Classify
 
-*CHOP · v0.1.3*
+*CHOP · v0.1.4*
 
 <!-- screenshot: drop a PNG at docs/images/sound_classify.png and rerun the generator -->
 
@@ -13,6 +13,13 @@ Audio.
 ## Outputs
 
 Ranked classes as channels, plus a stable channel per sound you name in the watch list.
+
+## Built on
+
+This operator is a thin layer over the following; their own documentation is the reference for what it can and cannot do.
+
+- [SoundAnalysis](https://developer.apple.com/documentation/soundanalysis) — Apple's sound classification
+- [SNClassifySoundRequest](https://developer.apple.com/documentation/soundanalysis/snclassifysoundrequest) — the 303 sound classes and the window rule
 
 ## Worth knowing
 

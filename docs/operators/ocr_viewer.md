@@ -1,6 +1,6 @@
 # OCR / Text Recognition
 
-*TOP · v0.3.2*
+*TOP · v0.3.3*
 
 <!-- screenshot: drop a PNG at docs/images/ocr_viewer.png and rerun the generator -->
 
@@ -13,6 +13,13 @@ An image.
 ## Outputs
 
 A table of recognised strings with confidence and bounds.
+
+## Built on
+
+This operator is a thin layer over the following; their own documentation is the reference for what it can and cannot do.
+
+- [Vision framework](https://developer.apple.com/documentation/vision) — Apple's on-device image analysis
+- [VNRecognizeTextRequest](https://developer.apple.com/documentation/vision/vnrecognizetextrequest) — text recognition, the Accurate and Fast levels and the language list
 
 ## Worth knowing
 

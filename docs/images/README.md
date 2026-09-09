@@ -37,6 +37,7 @@ The filename must match the operator exactly:
 | `yolo_detect.png` | YOLO Detect |
 | `yolo_pose.png` | YOLO Pose |
 | `yolo_segment.png` | YOLO Segment |
-| `model-manager.png` | The Model Manager window |
+| `model_manager.png` | The Model Manager window (docs/model-manager.md) |
+| `op_create_dialog.png` | Header image on the repository README (the family in the OP Create dialog) |
 
 Anything not listed here is ignored.

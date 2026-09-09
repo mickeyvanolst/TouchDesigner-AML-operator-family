@@ -1,6 +1,6 @@
 # YOLO Segment
 
-*TOP · v0.4.3*
+*TOP · v0.4.4*
 
 <!-- screenshot: drop a PNG at docs/images/yolo_segment.png and rerun the generator -->
 
@@ -15,6 +15,17 @@ An image.
 ## Outputs
 
 Coloured masks or an overlay, plus a detection table.
+
+## Built on
+
+This operator is a thin layer over the following; their own documentation is the reference for what it can and cannot do.
+
+- [Core ML](https://developer.apple.com/documentation/coreml) — runs the model on the CPU, GPU and Neural Engine
+- [Ultralytics FastSAM](https://docs.ultralytics.com/models/fast-sam/) — segment-anything at video rate
+
+Models it downloads through the Model Manager, each under its own licence:
+
+- [FastSAM small (segment anything)](https://github.com/ultralytics/ultralytics) — AGPL-3.0
 
 ## Parameters
 

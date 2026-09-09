@@ -14,6 +14,13 @@ An image.
 
 A soft mask at the input resolution. Or a **cut-out**: the source with the subject kept and everything else transparent, premultiplied, ready for an Over TOP with no extra operators.
 
+## Built on
+
+This operator is a thin layer over the following; their own documentation is the reference for what it can and cannot do.
+
+- [Vision framework](https://developer.apple.com/documentation/vision) — Apple's on-device image analysis
+- [VNGenerateForegroundInstanceMaskRequest](https://developer.apple.com/documentation/vision/vngenerateforegroundinstancemaskrequest) — Apple's lift-subject segmentation (macOS 14+)
+
 ## Worth knowing
 
 - With no subject in frame the mask is entirely black — that is the honest answer, not a failure.

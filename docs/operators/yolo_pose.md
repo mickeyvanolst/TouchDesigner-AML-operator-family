@@ -1,6 +1,6 @@
 # YOLO Pose
 
-*TOP · v0.6.3*
+*TOP · v0.6.4*
 
 <!-- screenshot: drop a PNG at docs/images/yolo_pose.png and rerun the generator -->
 
@@ -15,6 +15,17 @@ An image.
 ## Outputs
 
 A visualisation, a keypoint table, and optionally an OpenPose render.
+
+## Built on
+
+This operator is a thin layer over the following; their own documentation is the reference for what it can and cannot do.
+
+- [Core ML](https://developer.apple.com/documentation/coreml) — runs the model on the CPU, GPU and Neural Engine
+- [Ultralytics YOLO11 pose](https://docs.ultralytics.com/tasks/pose/) — the 17 COCO keypoints
+
+Models it downloads through the Model Manager, each under its own licence:
+
+- [YOLO11 nano (pose)](https://github.com/ultralytics/ultralytics) — AGPL-3.0
 
 ## Parameters
 

@@ -1,5 +1,7 @@
 # AML — Apple Machine Learning operators for TouchDesigner
 
+![The AML family in the OP Create dialog](docs/images/op_create_dialog.png)
+
 A family of native TouchDesigner operators that wrap Apple's own machine
 learning — Vision, Core ML, Speech, Apple Intelligence — as operators you
 drag into a network.

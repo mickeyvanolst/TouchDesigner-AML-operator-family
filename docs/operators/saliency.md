@@ -1,6 +1,6 @@
 # Saliency
 
-*TOP · v0.2.3*
+*TOP · v0.2.4*
 
 <!-- screenshot: drop a PNG at docs/images/saliency.png and rerun the generator -->
 
@@ -13,6 +13,14 @@ An image.
 ## Outputs
 
 A heatmap, mask or overlay.
+
+## Built on
+
+This operator is a thin layer over the following; their own documentation is the reference for what it can and cannot do.
+
+- [Vision framework](https://developer.apple.com/documentation/vision) — Apple's on-device image analysis
+- [VNGenerateAttentionBasedSaliencyImageRequest](https://developer.apple.com/documentation/vision/vngenerateattentionbasedsaliencyimagerequest) — where the eye goes
+- [VNGenerateObjectnessBasedSaliencyImageRequest](https://developer.apple.com/documentation/vision/vngenerateobjectnessbasedsaliencyimagerequest) — where the objects are
 
 ## Parameters
 

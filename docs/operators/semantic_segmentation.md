@@ -1,6 +1,6 @@
 # Semantic Segmentation
 
-*TOP · v0.4.3*
+*TOP · v0.4.4*
 
 <!-- screenshot: drop a PNG at docs/images/semantic_segmentation.png and rerun the generator -->
 
@@ -15,6 +15,19 @@ An image.
 ## Outputs
 
 A class map, overlay or binary mask, and **out_segnames** — the classes actually present in the frame as a table of class id, name, pixel count and coverage.
+
+## Built on
+
+This operator is a thin layer over the following; their own documentation is the reference for what it can and cannot do.
+
+- [Core ML](https://developer.apple.com/documentation/coreml) — runs the model on the CPU, GPU and Neural Engine
+- [DeepLabV3](https://developer.apple.com/machine-learning/models/) — the 21 PASCAL VOC classes
+- [DETR ResNet-50](https://huggingface.co/apple/coreml-detr-semantic-segmentation) — the 133 COCO-panoptic classes
+
+Models it downloads through the Model Manager, each under its own licence:
+
+- [DeepLab V3 (segmentation)](https://developer.apple.com/machine-learning/models/) — Apache-2.0
+- [Face parsing (19 classes)](https://github.com/yakhyo/face-parsing) — MIT
 
 ## Worth knowing
 

@@ -1,6 +1,6 @@
 # CoreML Data
 
-*CHOP · v0.1.1*
+*CHOP · v0.1.2*
 
 <!-- screenshot: drop a PNG at docs/images/coreml_data.png and rerun the generator -->
 
@@ -15,6 +15,14 @@ Up to four CHOPs, fed to the model's inputs in alphabetical order.
 ## Outputs
 
 Channels, one per output value.
+
+## Built on
+
+This operator is a thin layer over the following; their own documentation is the reference for what it can and cannot do.
+
+- [Core ML](https://developer.apple.com/documentation/coreml) — runs the model on the CPU, GPU and Neural Engine
+- [MLModel](https://developer.apple.com/documentation/coreml/mlmodel) — the model file this operator loads
+- [MLMultiArray](https://developer.apple.com/documentation/coreml/mlmultiarray) — how CHOP channels reach the model
 
 ## Worth knowing
 

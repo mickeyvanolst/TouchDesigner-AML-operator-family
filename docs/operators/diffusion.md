@@ -1,6 +1,6 @@
 # Diffusion
 
-*TOP · v0.7.6*
+*TOP · v0.8.0*
 
 <!-- screenshot: drop a PNG at docs/images/diffusion.png and rerun the generator -->
 
@@ -15,6 +15,24 @@ Optional: a source image (input 1), a ControlNet control image (input 2), an inp
 ## Outputs
 
 The generated image.
+
+## Built on
+
+This operator is a thin layer over the following; their own documentation is the reference for what it can and cannot do.
+
+- [Core ML](https://developer.apple.com/documentation/coreml) — runs the model on the CPU, GPU and Neural Engine
+- [apple/ml-stable-diffusion](https://github.com/apple/ml-stable-diffusion) — the Core ML Stable Diffusion pipeline this operator drives, and how to convert a model of your own (MIT)
+- [ControlNet](https://github.com/lllyasviel/ControlNet) — what the control image does
+
+Models it downloads through the Model Manager, each under its own licence:
+
+- [Stable Diffusion 2 base](https://huggingface.co/apple/coreml-stable-diffusion-2-base) — CreativeML Open RAIL-M
+- [Stable Diffusion XL base](https://huggingface.co/apple/coreml-stable-diffusion-xl-base) — CreativeML Open RAIL++-M
+- [SD 1.5 + ControlNet](https://huggingface.co/coreml-community/coreml-stable-diffusion-v1-5_cn) — CreativeML Open RAIL-M
+- [DreamShaper (SD 1.5)](https://huggingface.co/coreml-community/cormel-DreamShaper-v8_cn) — CreativeML Open RAIL-M
+- [SD 1.5 landscape (768x512)](https://huggingface.co/coreml-community/coreml-stable-diffusion-v1-5_cn) — CreativeML Open RAIL-M
+- [SD-Turbo (1–4 steps)](https://huggingface.co/keijiro-tk/coreml-sd-turbo) — Stability AI Community License
+- [SDXL VAE encoder (fp16 fix)](https://huggingface.co/madebyollin/sdxl-vae-fp16-fix) — MIT
 
 ## Worth knowing
 
@@ -43,8 +61,11 @@ The generated image.
 | **Loop Generate** | toggle | False |  |
 | **Generate On Input Change** | toggle | False |  |
 | **Cancel** | button |  |  |
-| **Save Path** | file |  |  |
-| **Choose…** | button |  |  |
+| **Clear** | button |  |  |
+| **Image File Type** | menu | png | PNG, JPEG, TIFF, EXR |
+| **Unique Suffix** | toggle | False |  |
+| **N** | number | 0 |  |
+| **Save Path** | FileSave |  |  |
 | **Save** | button |  |  |
 | **Steps** | number | 0 |  |
 | **Guidance Scale** | number | 0.0 |  |
@@ -77,13 +98,13 @@ Reachable on the operator via its extension:
 
 - `Busy`
 - `Cancel`
-- `ChooseSavePath`
 - `ControlNets`
 - `DoCallback`
 - `Generate`
 - `LastError`
 - `LastSeed`
 - `Loaded`
+- `SUFFIX`
 - `SampleSize`
 - `SaveImage`
 

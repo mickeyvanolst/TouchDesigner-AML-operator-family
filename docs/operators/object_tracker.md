@@ -1,6 +1,6 @@
 # Object Tracker
 
-*TOP · v0.3.1*
+*TOP · v0.3.2*
 
 <!-- screenshot: drop a PNG at docs/images/object_tracker.png and rerun the generator -->
 
@@ -13,6 +13,16 @@ A moving image. Stills give it nothing to track.
 ## Outputs
 
 A passthrough image plus a table of tracks: id, label, position, size, confidence and age.
+
+## Built on
+
+This operator is a thin layer over the following; their own documentation is the reference for what it can and cannot do.
+
+- [Vision framework](https://developer.apple.com/documentation/vision) — Apple's on-device image analysis
+- [VNDetectHumanRectanglesRequest](https://developer.apple.com/documentation/vision/vndetecthumanrectanglesrequest) — seeds tracks from people
+- [VNRecognizeAnimalsRequest](https://developer.apple.com/documentation/vision/vnrecognizeanimalsrequest) — seeds tracks from animals
+- [VNTrackObjectRequest](https://developer.apple.com/documentation/vision/vntrackobjectrequest) — follows each seed across frames
+- [VNSequenceRequestHandler](https://developer.apple.com/documentation/vision/vnsequencerequesthandler) — keeps the tracks between frames
 
 ## Worth knowing
 

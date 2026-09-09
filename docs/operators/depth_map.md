@@ -1,6 +1,6 @@
 # Depth Map
 
-*TOP · v0.3.4*
+*TOP · v0.3.5*
 
 <!-- screenshot: drop a PNG at docs/images/depth_map.png and rerun the generator -->
 
@@ -15,6 +15,17 @@ An image.
 ## Outputs
 
 A depth image. Values are relative, not metres — see **Depth Metric** if you need real distance.
+
+## Built on
+
+This operator is a thin layer over the following; their own documentation is the reference for what it can and cannot do.
+
+- [Core ML](https://developer.apple.com/documentation/coreml) — runs the model on the CPU, GPU and Neural Engine
+- [Depth Anything V2](https://github.com/DepthAnything/Depth-Anything-V2) — the model; its paper and the larger, non-commercial variants
+
+Models it downloads through the Model Manager, each under its own licence:
+
+- [Depth Anything V2 Small](https://huggingface.co/apple/coreml-depth-anything-v2-small) — Apache-2.0
 
 ## Parameters
 

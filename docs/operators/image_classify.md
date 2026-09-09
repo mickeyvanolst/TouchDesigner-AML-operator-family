@@ -1,6 +1,6 @@
 # Image Classify
 
-*TOP · v0.3.2*
+*TOP · v0.3.3*
 
 <!-- screenshot: drop a PNG at docs/images/image_classify.png and rerun the generator -->
 
@@ -13,6 +13,13 @@ An image.
 ## Outputs
 
 A ranked table of labels with confidences.
+
+## Built on
+
+This operator is a thin layer over the following; their own documentation is the reference for what it can and cannot do.
+
+- [Vision framework](https://developer.apple.com/documentation/vision) — Apple's on-device image analysis
+- [VNClassifyImageRequest](https://developer.apple.com/documentation/vision/vnclassifyimagerequest) — the classifier and its label set
 
 ## Parameters
 

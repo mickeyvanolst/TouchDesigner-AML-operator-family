@@ -1,6 +1,6 @@
 # Speech to Text
 
-*CHOP · v0.2.4*
+*CHOP · v0.2.5*
 
 <!-- screenshot: drop a PNG at docs/images/speech_text.png and rerun the generator -->
 
@@ -13,6 +13,14 @@ Audio, wired in.
 ## Outputs
 
 Channels for activity and counts, and a table of utterances with the live partial hypothesis.
+
+## Built on
+
+This operator is a thin layer over the following; their own documentation is the reference for what it can and cannot do.
+
+- [Speech framework](https://developer.apple.com/documentation/speech) — Apple's speech recognition
+- [SFSpeechRecognizer](https://developer.apple.com/documentation/speech/sfspeechrecognizer) — locales, on-device support, the server task limit
+- [requiresOnDeviceRecognition](https://developer.apple.com/documentation/speech/sfspeechrecognitionrequest/requiresondevicerecognition) — what On-Device Only switches
 
 ## Worth knowing
 

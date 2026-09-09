@@ -1,6 +1,6 @@
 # CoreML Model
 
-*TOP · v0.4.3*
+*TOP · v0.4.4*
 
 <!-- screenshot: drop a PNG at docs/images/coreml_model.png and rerun the generator -->
 
@@ -15,6 +15,22 @@ An image, and optionally a second image for two-image models.
 ## Outputs
 
 Depends on **Result Mode** — a picture, a segmentation map, normalised floats, or exact tensor values for decoding downstream.
+
+## Built on
+
+This operator is a thin layer over the following; their own documentation is the reference for what it can and cannot do.
+
+- [Core ML](https://developer.apple.com/documentation/coreml) — runs the model on the CPU, GPU and Neural Engine
+- [MLModel](https://developer.apple.com/documentation/coreml/mlmodel) — the model file this operator loads
+- [Core ML model gallery](https://developer.apple.com/machine-learning/models/) — Apple's ready-made models
+- [Apple on Hugging Face](https://huggingface.co/apple) — more Core ML conversions
+- [Core ML models on Hugging Face](https://huggingface.co/models?library=coreml) — everyone else's
+
+Models it downloads through the Model Manager, each under its own licence:
+
+- [DETR ResNet-50 (segmentation)](https://huggingface.co/apple/coreml-detr-semantic-segmentation) — Apache-2.0
+- [FastViT-T8 (classification)](https://huggingface.co/apple/coreml-FastViT-T8) — Apple Sample Code License
+- [Face parsing (19 classes)](https://github.com/yakhyo/face-parsing) — MIT
 
 ## Worth knowing
 

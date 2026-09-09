@@ -1,4 +1,4 @@
-# AML — Apple Machine Learning operators for TouchDesigner
+![[geo_gen fish demo.png]]# AML — Apple Machine Learning operators for TouchDesigner
 
 ![The AML family in the OP Create dialog](docs/images/op_create_dialog.png)
 
@@ -12,6 +12,8 @@ keys, and nothing leaves the machine.
 **Requirements:** an Apple Silicon Mac, macOS 12 or newer, TouchDesigner
 2023.12000 or newer. A few operators need a newer macOS and say so on the
 node.
+
+![[geo_gen fish demo.png]]
 
 ---
 

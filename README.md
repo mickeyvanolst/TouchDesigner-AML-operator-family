@@ -13,7 +13,7 @@ keys, and nothing leaves the machine.
 2023.12000 or newer. A few operators need a newer macOS and say so on the
 node.
 
-![[docs/images/geo_gen-fish-demo.png]]
+![[Fish generation via diffusion and GeoGen](docs/images/geo_gen-fish-demo.png)
 
 ---
 

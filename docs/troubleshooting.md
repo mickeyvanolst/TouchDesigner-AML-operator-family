@@ -1,8 +1,3 @@
-# Troubleshooting
-
-The things that actually go wrong, and what to do about them.
-
----
 
 ## The operator says a model is not installed
 

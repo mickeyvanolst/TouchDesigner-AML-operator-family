@@ -1,6 +1,6 @@
 # Image Similarity
 
-*CHOP · v0.3.4*
+*CHOP · v0.3.5*
 
 <!-- screenshot: drop a PNG at docs/images/image_similarity.png and rerun the generator -->
 

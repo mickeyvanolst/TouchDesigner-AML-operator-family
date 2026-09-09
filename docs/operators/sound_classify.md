@@ -1,6 +1,6 @@
 # Sound Classify
 
-*CHOP · v0.1.6*
+*CHOP · v0.1.7*
 
 <!-- screenshot: drop a PNG at docs/images/sound_classify.png and rerun the generator -->
 

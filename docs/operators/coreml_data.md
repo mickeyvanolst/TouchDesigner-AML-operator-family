@@ -1,6 +1,6 @@
 # CoreML Data
 
-*CHOP · v0.1.4*
+*CHOP · v0.1.5*
 
 <!-- screenshot: drop a PNG at docs/images/coreml_data.png and rerun the generator -->
 

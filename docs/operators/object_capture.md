@@ -1,6 +1,6 @@
 # Object Capture
 
-*POP · v0.2.2*
+*POP · v0.2.3*
 
 <!-- screenshot: drop a PNG at docs/images/object_capture.png and rerun the generator -->
 

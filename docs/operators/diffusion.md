@@ -1,6 +1,6 @@
 # Diffusion
 
-*TOP · v0.8.2*
+*TOP · v0.8.3*
 
 <!-- screenshot: drop a PNG at docs/images/diffusion.png and rerun the generator -->
 

@@ -1,6 +1,6 @@
 # Speech to Text
 
-*CHOP · v0.2.7*
+*CHOP · v0.2.8*
 
 <!-- screenshot: drop a PNG at docs/images/speech_text.png and rerun the generator -->
 

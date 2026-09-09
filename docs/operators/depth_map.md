@@ -1,6 +1,6 @@
 # Depth Map
 
-*TOP · v0.3.7*
+*TOP · v0.3.8*
 
 <!-- screenshot: drop a PNG at docs/images/depth_map.png and rerun the generator -->
 

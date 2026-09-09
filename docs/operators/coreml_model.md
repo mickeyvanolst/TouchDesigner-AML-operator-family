@@ -1,6 +1,6 @@
 # CoreML Model
 
-*TOP · v0.4.6*
+*TOP · v0.4.7*
 
 <!-- screenshot: drop a PNG at docs/images/coreml_model.png and rerun the generator -->
 

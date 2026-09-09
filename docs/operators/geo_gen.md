@@ -1,6 +1,6 @@
 # Geo Gen
 
-*POP · v0.5.2*
+*POP · v0.5.3*
 
 <!-- screenshot: drop a PNG at docs/images/geo_gen.png and rerun the generator -->
 

@@ -1,6 +1,6 @@
 # YOLO Pose
 
-*TOP · v0.6.7*
+*TOP · v0.6.8*
 
 <!-- screenshot: drop a PNG at docs/images/yolo_pose.png and rerun the generator -->
 
@@ -25,7 +25,7 @@ This operator is a thin layer over the following; their own documentation is the
 
 Models it downloads through the Model Manager, each under its own licence:
 
-- [YOLO11 nano (pose)](https://github.com/ultralytics/ultralytics) — AGPL-3.0
+- [YOLO11 nano (pose)](https://huggingface.co/mickeyvanolst/yolo-coreml) — AGPL-3.0
 
 ## Parameters
 

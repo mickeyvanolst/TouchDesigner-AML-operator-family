@@ -1,6 +1,6 @@
 # Semantic Segmentation
 
-*TOP · v0.4.7*
+*TOP · v0.4.8*
 
 <!-- screenshot: drop a PNG at docs/images/semantic_segmentation.png and rerun the generator -->
 
@@ -42,7 +42,7 @@ Models it downloads through the Model Manager, each under its own licence:
 | Parameter | Type | Default | Options |
 |---|---|---|---|
 | **Source TOP** | TOP |  |  |
-| **Model** | menu | deeplabv3fp16_mlmodel | DeepLab V3 (segmentation), DETR ResNet-50 (segmentation), Face parsing (19 classes), Custom file... |
+| **Model** | menu | deeplabv3fp16_mlmodel | DeepLab V3 (segmentation), DETR ResNet-50 (segmentation), Face parsing (19 classes)  (not installed), Custom file... |
 | **Model Path** | file |  |  |
 | **Model Status** | text |  |  |
 | **Fit Mode** | menu | Stretch | Stretch, Letterbox (pad), Crop (fill) |

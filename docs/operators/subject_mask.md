@@ -1,6 +1,6 @@
 # Subject Mask
 
-*TOP · v0.2.3*
+*TOP · v0.2.4*
 
 <!-- screenshot: drop a PNG at docs/images/subject_mask.png and rerun the generator -->
 

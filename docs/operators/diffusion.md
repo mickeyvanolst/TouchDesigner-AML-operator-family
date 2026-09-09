@@ -1,6 +1,6 @@
 # Diffusion
 
-*TOP · v0.8.3*
+*TOP · v0.8.4*
 
 <!-- screenshot: drop a PNG at docs/images/diffusion.png and rerun the generator -->
 
@@ -49,7 +49,7 @@ Models it downloads through the Model Manager, each under its own licence:
 | Parameter | Type | Default | Options |
 |---|---|---|---|
 | **Enable** | toggle | False |  |
-| **Model** | menu | sd_turbo | SD-Turbo (1–4 steps)  (not installed), Stable Diffusion 2 base, SD 1.5 + ControlNet, DreamShaper (SD 1.5), SD 1.5 landscape (768x512), Stable Diffusion XL base, Custom file... |
+| **Model** | menu | sd_turbo | SD-Turbo (1–4 steps)  (not installed), Stable Diffusion 2 base, SD 1.5 + ControlNet, DreamShaper (SD 1.5), SD 1.5 landscape (768x512)  (not installed), Stable Diffusion XL base, Custom file... |
 | **Model Folder** | folder |  |  |
 | **Model Status** | text |  |  |
 | **Manage Models** | button |  |  |

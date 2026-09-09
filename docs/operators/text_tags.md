@@ -1,6 +1,6 @@
 # Text Tags
 
-*CHOP · v0.2.7*
+*CHOP · v0.2.8*
 
 <!-- screenshot: drop a PNG at docs/images/text_tags.png and rerun the generator -->
 

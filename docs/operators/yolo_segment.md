@@ -1,6 +1,6 @@
 # YOLO Segment
 
-*TOP · v0.4.7*
+*TOP · v0.4.8*
 
 <!-- screenshot: drop a PNG at docs/images/yolo_segment.png and rerun the generator -->
 
@@ -25,7 +25,7 @@ This operator is a thin layer over the following; their own documentation is the
 
 Models it downloads through the Model Manager, each under its own licence:
 
-- [FastSAM small (segment anything)](https://github.com/ultralytics/ultralytics) — AGPL-3.0
+- [FastSAM small (segment anything)](https://huggingface.co/mickeyvanolst/yolo-coreml) — AGPL-3.0
 
 ## Parameters
 

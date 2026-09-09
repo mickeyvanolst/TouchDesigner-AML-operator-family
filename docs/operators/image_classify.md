@@ -1,6 +1,6 @@
 # Image Classify
 
-*TOP · v0.3.6*
+*TOP · v0.3.7*
 
 <!-- screenshot: drop a PNG at docs/images/image_classify.png and rerun the generator -->
 

@@ -1,6 +1,6 @@
 # Barcode / QR Reader
 
-*TOP · v0.1.3*
+*TOP · v0.1.4*
 
 <!-- screenshot: drop a PNG at docs/images/code_reader.png and rerun the generator -->
 

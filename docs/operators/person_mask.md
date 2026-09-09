@@ -1,6 +1,6 @@
 # Person Mask
 
-*TOP · v0.2.4*
+*TOP · v0.2.5*
 
 <!-- screenshot: drop a PNG at docs/images/person_mask.png and rerun the generator -->
 

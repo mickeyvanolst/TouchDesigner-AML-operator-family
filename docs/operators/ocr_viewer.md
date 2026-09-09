@@ -1,6 +1,6 @@
 # OCR / Text Recognition
 
-*TOP · v0.3.3*
+*TOP · v0.3.4*
 
 <!-- screenshot: drop a PNG at docs/images/ocr_viewer.png and rerun the generator -->
 

@@ -1,6 +1,6 @@
 # YOLO Segment
 
-*TOP · v0.4.4*
+*TOP · v0.4.5*
 
 <!-- screenshot: drop a PNG at docs/images/yolo_segment.png and rerun the generator -->
 

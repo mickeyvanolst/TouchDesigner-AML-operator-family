@@ -5,6 +5,8 @@ learning — Vision, Core ML, Speech, Apple Intelligence — as operators you
 drag into a network. Everything runs on your Mac. No Python environment, no
 cloud service, no API keys.
 
+See this Patreon post for more info https://www.patreon.com/MickeyvanOlst/posts/meet-aml-macos-167645742/
+
 **Requirements:** an Apple Silicon Mac, macOS 12 or newer, TouchDesigner
 2023.12000 or newer. A few operators need a newer macOS and say so.
 

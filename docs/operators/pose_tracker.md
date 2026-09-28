@@ -12,7 +12,7 @@ An image, wired into the first input or set as **Source**.
 
 ## Outputs
 
-Two CHOP outputs. `out_channels` carries the body and hand channels, prefixed `pose_`, one sample per person slot. `out_faces` carries the face landmarks, prefixed `face_`, one sample per landmark point — their own output because the sample count is Max Faces × 87, which would otherwise pad every body channel out to that length. With **Detect 3D Pose** on, the member also emits the skeleton as geometry on `out_pose3d`: a point per joint carrying `P` in metres, and one line per bone.
+Five CHOP outputs, split by what you do with them, all in the Kinect CHOP's dialect: one channel block per person, one sample. `out_body` — `p1/tracked`, `p1/bbox:x/y/w/h`, the 19 joints as `p1/wrist_l:x`, `:y`, `:conf`, and with **Detect 3D Pose** on `p1/tracked3d`, `p1/height` and `p1/<joint>:tx/ty/tz` in metres. `out_hands` — `p1/hand_l:tracked` and the 21 joints per hand as `p1/hand_l_index_tip:x/y/conf`. `out_gestures` — per hand `:gesture`, `:fingers`, `:pinch`, `:pinch_on`, one `:is_fist` / `:is_open` / … channel per gesture, per-finger `:ext` / `:curl`, plus the pinch midpoint and `:pinch_start` / `:pinch_end` pulses. `out_faces` — the face landmarks, prefixed `face_`, one sample per landmark point, with `face_yaw/roll/pitch` and `face_body_index` (0 = person 1). `out_instances` — every body joint as one SAMPLE per point (`x y conf person joint tracked`), the layout a Geometry COMP instances from directly; **Instance Hands** adds the hand joints. `out_pose3d` is the 3D skeleton as geometry (a point per joint in metres, a line per bone) and `out_pose` an OpenPose render.
 
 ## Built on
 
@@ -27,8 +27,9 @@ This operator is a thin layer over the following; their own documentation is the
 
 ## Worth knowing
 
+- Select by pattern: `p1/*` is one person, `*wrist_l:*` one joint across everybody, `*:conf` every confidence, `*:is_fist` a fist trigger for every hand. Max People adds `p2/`, `p3/` … blocks and changes nothing else. Sides are suffixes (`shoulder_l`), and a joint that exists in 2D and 3D has one name: `p1/wrist_l:x` and `p1/wrist_l:tx` are the same wrist.
+- A joint's `:conf` is 0 when it was not detected — scale or gate by it rather than testing for zero coordinates.
 - Face landmarks come from the same Vision request the separate Face Landmarks operator used to run — that operator was folded into this one, and its `GetFaces()` and `FaceCount` are available here. For face work alone, turn Detect Body, Detect Pose and Detect Hands off: the pose request is then skipped entirely and the cost matches the old dedicated operator (measured 5.9 ms against 6.1 ms).
-- Face landmarks produce far more samples than people — `numSamples` is `max(Max People, Max Faces x points-per-face)`, which is 261 with faces on. Read the person count from **Max People**, never from the sample count.
 - 3D pose is expensive (~300 ms against ~12 ms for everything else) so it runs on its own queue: 2D tracking stays at full rate while the skeleton refreshes a few times a second.
 - A channel that is not being produced reads as `None`. Guard any expression that indexes one, or turning a toggle off will put your own nodes into error.
 
@@ -64,6 +65,7 @@ This operator is a thin layer over the following; their own documentation is the
 | **Min Confidence** | number | 0.1 |  |
 | **OpenPose Render Out** | toggle | False |  |
 | **OpenPose Render Size** | number | 512 |  |
+| **Instance Hands** | toggle | False |  |
 
 ### Output
 
@@ -81,8 +83,11 @@ Reachable on the operator via its extension:
 - `ActivePeople`
 - `DoCallback`
 - `FaceCount`
+- `GetBox`
 - `GetFaces`
 - `GetJoints`
+- `IsTracked`
+- `People`
 
 ## Callbacks
 

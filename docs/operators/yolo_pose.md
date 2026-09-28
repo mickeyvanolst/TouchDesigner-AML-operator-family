@@ -1,6 +1,6 @@
 # YOLO Pose
 
-*TOP · v0.6.8*
+*TOP · v0.6.9*
 
 <!-- screenshot: drop a PNG at docs/images/yolo_pose.png and rerun the generator -->
 
@@ -14,7 +14,7 @@ An image.
 
 ## Outputs
 
-A visualisation, a keypoint table, and optionally an OpenPose render.
+A visualisation and a keypoint table, plus the same CHOP dialect Pose Tracker speaks: `out_body` with one channel block per person (`p1/tracked`, `p1/id` = the track id, `p1/conf`, `p1/bbox:x/y/w/h`, `p1/nose:x/y/conf` …), `out_instances` with one sample per keypoint for instancing, and optionally an OpenPose render on `out_pose`.
 
 ## Built on
 
@@ -26,6 +26,10 @@ This operator is a thin layer over the following; their own documentation is the
 Models it downloads through the Model Manager, each under its own licence:
 
 - [YOLO11 nano (pose)](https://huggingface.co/mickeyvanolst/yolo-coreml) — AGPL-3.0
+
+## Worth knowing
+
+- With **Track IDs** on, `p2/` stays the same human for as long as their track lives; `p<N>/id` carries the id.
 
 ## Parameters
 
@@ -75,7 +79,10 @@ Reachable on the operator via its extension:
 
 - `ActivePeople`
 - `DoCallback`
+- `GetBox`
 - `GetJoints`
+- `IsTracked`
+- `People`
 
 ## Callbacks
 

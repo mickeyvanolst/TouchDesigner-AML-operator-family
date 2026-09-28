@@ -1,6 +1,6 @@
 # Semantic Segmentation
 
-*TOP · v0.4.8*
+*TOP · v0.4.9*
 
 <!-- screenshot: drop a PNG at docs/images/semantic_segmentation.png and rerun the generator -->
 

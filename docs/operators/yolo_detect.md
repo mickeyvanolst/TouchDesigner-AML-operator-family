@@ -1,6 +1,6 @@
 # YOLO Detect
 
-*TOP · v0.5.8*
+*TOP · v0.5.9*
 
 <!-- screenshot: drop a PNG at docs/images/yolo_detect.png and rerun the generator -->
 

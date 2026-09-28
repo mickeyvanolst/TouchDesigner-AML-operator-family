@@ -10,6 +10,14 @@ Press **Manage Models**. The Model Manager lists every model with its size,
 licence, which operators use it, and where it would go. Nothing downloads
 until you say so.
 
+**Choosing a model you have not downloaded keeps your choice and keeps the
+operator running on the model it already had**, so a scene never goes blank
+because you clicked an entry to see what it was. The warning says both, for
+example "Face parsing (19 classes) not installed (53 MB); still running
+DeepLabV3FP16.mlmodel". Read it as: what is on screen is the old model, and
+the labels and colours in the Info DAT describe that one, not the model in
+the menu. Download the model and the operator switches on its own.
+
 The first time you add AML to a project it offers to open the Manager for
 you. Declining is remembered — it is a welcome, not a nag — and the button
 on the operator gets you back there.
